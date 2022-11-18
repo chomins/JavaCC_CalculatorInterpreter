@@ -25,6 +25,22 @@ TOKEN : /* SEPARATORS */
 }
 
 TOKEN : {
+ <PLUS : "+">
+}
+
+TOKEN : {
+ <MINUS : "-">
+}
+
+TOKEN : {
+ <TIMES : "*">
+}
+
+TOKEN : {
+ <DIVIDE : "/">
+}
+
+TOKEN : {
     < IDENT: <LETTER> (<LETTER>|<DIGIT>)* >
     |
     <NUMBER : (<DIGIT>)+>
@@ -44,5 +60,7 @@ TOKEN : {
             ]
         >
 }
+
+
 
 
